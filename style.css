@@ -1,0 +1,33 @@
+
+body{
+    width: 1200px;
+    margin: auto;   
+}
+
+a{
+    /* list-style: none; */
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+/* Nav Bar */
+
+#navbar{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.navbar_logo{
+
+}
+.navbar_menu{
+
+
+}
+
+.navbar_menu_item{
+
+}

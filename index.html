@@ -16,31 +16,201 @@
 </head>
 <body>
        <!--Navbar-->
-       <nav id="navbar">
-        <div class="navbar__logo">
+    <nav id="navbar">
+        <div class="navbar_logo">
             <i class="fas fa-paw"></i>
-            <a href="#">MinJi</a>
+            <a href="#">MinJi's Portfolio</a>
         </div>
-            <ul class="navbar__menu">
-                <li class="navbar__menu__item">Home</li>
-                <li class="navbar__menu__item">About</li>
-                <li class="navbar__menu__item">Skils</li>
-                <li class="navbar__menu__item">My work</li>
-                <li class="navbar__menu__item">Testimonials</li>
-                <li class="navbar__menu__item">contact</li>
+        <div class="navbar_menu">
+            <ul class="navbar_menu_list">
+                <li class="navbar_menu_item">Home</li>
+                <li class="navbar_menu_item">About</li>
+                <li class="navbar_menu_item">Skils</li>
+                <li class="navbar_menu_item">My Project</li> 
             </ul>
         </div>
     </nav>
+
+    <section id="Home">
+        <img src="images/쁘니2.jpg" alt="Minji's profile photo"class="home__avatar"/>
+        <h1 class="home_title">Joe min ji</h1>
+        <h3 class="home_description">안녕하세요. 프론트엔드 개발자를 꿈꾸는 조민지입니다.</h2>
+        <!-- <div class="home_info">
+            <ul>
+                <li>E-mail : whalswl576@gmail.com</li>
+                <li>Blog : <a href="https://min-coding.tistory.com/">블로그</a></li>
+                <li>Git-hub : <a href="https://github.com/min-ji97">깃허브</a></li>
+            </ul>
+        </div> -->
+
+       
+    </section>
+
     <!--About-->
-    <section id="about"></section>
+    <section id="about">
+        <h1>About Me</h1>
+        
+        <div class="about_my_info">
+            <div>이름 : 조민지 </div>
+            <div>생년월일 : 97.11.10</div>
+            <div>주소 : 경기도 이천시</div>
+            <div>연락처 : 010-4004-1372</div>
+            <div>메일 : whalswl576@gmail.com</div>
+            <div>학력 : 남서울대학교 컴퓨터소프트웨어학과 졸업</div>
+        </div>
+        <div class="about_majors">
+            <!-- 프론트엔드  -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major_description">
+                    HTML, CSS, JavaScript, Vue, Web APIs
+                </div>
+            </div>
+            <!-- 백엔드  -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fab fa-html5"></i>
+                </div>
+                <div class="major_description">
+                    JavaScript, Node.js ,   
+                </div>
+            </div>
+            <!-- 자격증 -->
+            <div class="major">
+                <div class="major_icon">
+                    <i class="fas fa-server"></i>
+                </div>
+                <div class="major__description">
+                   정보처리기사, MOS MASTER
+                </div>
+            </div>
+        </div>
+
+       
+    </section>
     <!--Skils-->
-    <section id="skils"></section>
-    <!--My work-->
-    <section id="work"></section>
-    <!--testimonials-->
-    <section id="testimonials"></section>
-    <!--contact-->
-    <section id="contact"></section>
+    <section id="skils">
+        <h1>Skils</h1>
+
+        <div class="skillset">
+            
+            <div class="skill">
+                <div class="skill_description">
+                    <span>HTML</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill__bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill_description">
+                    <span>CSS</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill_bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill_description">
+                    <span>JavaScript</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill_bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill_description">
+                    <span>Vue</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill_bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--My Project-->
+    <section id="project">
+        <h1>My Project</h1>
+        <div class="projects">
+            <!-- 졸작 -->
+            <div class="my_project">
+                <div class="project_title">누리다</div>
+                <div class="project_contents">
+                    <div class="project_contents_img"></div>
+                    <div class="project_contents_text"></div>
+                </div>
+            </div>
+            <!-- 펫보드 게시판 -->
+            <div class="my_project">
+                <div class="project_title">petTalk</div>
+                <div class="project_contents">
+                    <div class="project_contents_img"></div>
+                    <div class="project_contents_text"></div>
+                </div>
+            </div>
+            <!-- 스타벅스 클론코딩 -->
+            <div class="my_project">
+                <div class="project_title">스타벅스 클론코딩</div>
+                <div class="project_contents">
+                    <div class="project_contents_img"></div>
+                    <div class="project_contents_text"></div>
+                </div>
+            </div>
+            <!-- 카카오톡 클론코딩 -->
+            <div class="my_project">
+                <div class="project_title">카카오톡 클론코딩 + soket.io</div>
+                <div class="project_contents">
+                    <div class="project_contents_img"></div>
+                    <div class="project_contents_text"></div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--contact ( footer! )-->
+    <section id="contact">
+        <div class="contacts">
+            <div class="contact_git">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-square">깃허브</i>
+                </a>
+            </div>
+            <div class="contact_blog">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-square">티스토리</i>
+                </a>
+            </div>
+            <div class="contact_email">
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin-square">메일</i>
+                </a>
+            </div>
+        </div>
+        <p class="contact_right">2022 joeMinJi - All rights reserved </p>
+        
+        <!-- <h2 class="contact_email"></h2>
+        <div class="contact_links">
+            <a href="내 깃 주소쓰면 되겠따ㅎㅎ" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="#" target="_blank">
+                <i class="fab fa-linkedin-square"></i>
+            </a>
+        </div>
+        <p class="contact_right">2022 joeMinJi - All rights reserved </p> -->
+    </section>
  
 </body>
 </html> 
