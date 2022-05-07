@@ -7,16 +7,22 @@ body{
 a{
     /* list-style: none; */
     text-decoration: none;
+    /* cursor: pointer; */
+    color: black;
 }
 
 li{
     list-style: none;
+    
 }
 /* Nav Bar */
 
 #navbar{
+
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 40px;
     
 }
 
@@ -24,9 +30,31 @@ li{
 
 }
 .navbar_menu{
-
+    /* width: 50%; */
+    /* display: flex; */
+    /* justify-content: center; */
+}
+.navbar_menu_list{
+    /* display: inline-block; */
+    /* align-items: center; */
+    margin: 0px 10px;
+    /* background-color: red; */
+    /* float: left; */
+    
 }
 
 .navbar_menu_item{
+    float: left;
+    margin: 0px 20px;
+    font-size: 18px;
+}
 
+/* /////////////////////////////////////////////// */
+
+#Home{
+    display: flex;
+}
+
+#Home img{
+    border-radius: 50%;
 }
