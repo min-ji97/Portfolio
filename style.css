@@ -53,8 +53,169 @@ li{
 
 #Home{
     display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding-top: 20px;
+
+    background-color: antiquewhite;
 }
+/*  
+
+flex-direction을 column으로 주면 가운데정렬이안됨..!(justify content center 안먹힘)
+align-items center을 해줘야 요소들이 가운데 정렬을 함..!
+
+*/
 
 #Home img{
-    border-radius: 50%;
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
 }
+
+.home_title{
+    display: inline;
+    /* align-items: center; */
+}
+
+.home_description{
+    display: inline;
+    /* align-items: center; */
+}
+
+/* ///////////////////////////////////////// */
+
+#about{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(187, 243, 243);
+}
+
+.about_my_info{
+
+    font-size: 20px;
+}
+
+.about_majors{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+}
+.major_icon i{
+    font-size: 100px;
+
+    margin: 0px 30px;
+    /* display: inline; */
+}
+.major_front , 
+.major_back, 
+.major_certificate{
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 30px;
+}
+
+.major_description{
+    font-size: 20px;
+    line-height: 100px;
+}
+
+/* //////////////////////////////////////////////// */
+
+#skils{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+    background-color: rgb(169, 222, 247);
+}
+
+.skillset{
+    width: 80%;
+}
+
+.skill{
+    margin: 15px 0px;
+}
+
+.skill_description{
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 20px;
+}
+
+.skill_bar{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(240, 214, 214);
+}
+
+.skill_value{
+    width: 60%;
+    height: inherit;
+    background-color: black ;
+}
+
+/* ///////////////////////////////// */
+
+#project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 40px;
+    background-color: rgb(187, 235, 187);
+}
+
+.projects{
+    width: 100%;
+
+}
+
+.my_project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 30px;
+}
+
+.project_title{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.project_contents{
+    display: flex;
+    flex-direction: row;
+    background-color: bisque;
+
+    justify-content: space-around;
+
+    width: 100%;
+
+    text-align: center;
+
+}
+.project_contents_img{
+    width: 500px;
+    height: 600px;
+    /* margin: 30px; */
+    background-color:rgb(236, 125, 147);
+}
+.project_contents_text{
+    /* margin: 50px; */
+    width: 500px;
+    background-color: cornsilk;
+
+}
+
+/* ///////////////////////////// */
