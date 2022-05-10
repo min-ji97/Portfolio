@@ -225,6 +225,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     left: 0;
     bottom: 0;  
     background-color: red;
+    /*  */
 }
 
 .contacts{
