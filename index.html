@@ -16,22 +16,24 @@
 </head>
 <body>
        <!--Navbar-->
-    <nav id="navbar">
-        <div class="navbar_logo">
-            <i class="fas fa-paw"></i>
-            <a href="#">MinJi's Portfolio</a>
+    <section id="navbar" class="inner">
+        <div class="navbar_box">
+            <div class="navbar_logo">
+                <i class="fas fa-paw"></i>
+                <a href="#">MinJi's Portfolio</a>
+            </div>
+            <div class="navbar_menu">
+                <ul class="navbar_menu_list">
+                    <li class="navbar_menu_item"><a href="#">Home</a></li>
+                    <li class="navbar_menu_item"><a href="#">About</a></li>
+                    <li class="navbar_menu_item"><a href="#">Skils</a></li>
+                    <li class="navbar_menu_item"><a href="#">My Project</a></li> 
+                </ul>
+            </div>
         </div>
-        <div class="navbar_menu">
-            <ul class="navbar_menu_list">
-                <li class="navbar_menu_item"><a href="#">Home</a></li>
-                <li class="navbar_menu_item"><a href="#">About</a></li>
-                <li class="navbar_menu_item"><a href="#">Skils</a></li>
-                <li class="navbar_menu_item"><a href="#">My Project</a></li> 
-            </ul>
-        </div>
-    </nav>
+    </section>
 
-    <section id="Home">
+    <section id="Home" class="inner">
         <img src="images/쁘니2.jpg" alt="Minji's profile photo"class="home__avatar"/>
         <h1 class="home_title">Joe min ji</h1>
         <h3 class="home_description">안녕하세요. 프론트엔드 개발자를 꿈꾸는 조민지입니다.</h2>
@@ -47,7 +49,7 @@
     </section>
 
     <!--About-->
-    <section id="about">
+    <section id="about" class="inner">
         <h1>About Me</h1>
         
         <div class="about_my_info">
@@ -91,7 +93,7 @@
        
     </section>
     <!--Skils-->
-    <section id="skils">
+    <section id="skils" class="inner">
         <h1>Skils</h1>
 
         <div class="skillset">
@@ -139,7 +141,7 @@
     </section>
 
     <!--My Project-->
-    <section id="project">
+    <section id="project" class="inner">
         <h1>My Project</h1>
         <div class="projects">
             <!-- 졸작 -->
@@ -180,36 +182,38 @@
     </section>
 
     <!--contact ( footer! )-->
-    <section id="contact">
-        <div class="contacts">
-            <div class="contact_git">
+    <section id="footer">
+        <div class="inner">
+            <div class="contacts">
+                <div class="contact_git">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-square">깃허브</i>
+                    </a>
+                </div>
+                <div class="contact_blog">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-square">티스토리</i>
+                    </a>
+                </div>
+                <div class="contact_email">
+                    <a href="#" target="_blank">
+                        <i class="fab fa-linkedin-square">메일</i>
+                    </a>
+                </div>
+            </div>
+            <p class="contact_right">2022 joeMinJi - All rights reserved </p>
+            
+            <!-- <h2 class="contact_email"></h2>
+            <div class="contact_links">
+                <a href="내 깃 주소쓰면 되겠따ㅎㅎ" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
                 <a href="#" target="_blank">
-                    <i class="fab fa-linkedin-square">깃허브</i>
+                    <i class="fab fa-linkedin-square"></i>
                 </a>
             </div>
-            <div class="contact_blog">
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin-square">티스토리</i>
-                </a>
-            </div>
-            <div class="contact_email">
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin-square">메일</i>
-                </a>
-            </div>
+            <p class="contact_right">2022 joeMinJi - All rights reserved </p> -->
         </div>
-        <p class="contact_right">2022 joeMinJi - All rights reserved </p>
-        
-        <!-- <h2 class="contact_email"></h2>
-        <div class="contact_links">
-            <a href="내 깃 주소쓰면 되겠따ㅎㅎ" target="_blank">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="#" target="_blank">
-                <i class="fab fa-linkedin-square"></i>
-            </a>
-        </div>
-        <p class="contact_right">2022 joeMinJi - All rights reserved </p> -->
     </section>
  
 </body>
