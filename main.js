@@ -1,19 +1,9 @@
- // core version + navigation, pagination modules:
-//  import Swiper, { Navigation, Pagination } from 'swiper';
-import Swiper from './swiper.js';
+
+// import Swiper from 'swiper.js';
+// import 'swiper/swiper-bundle.css';
 
 
- // import Swiper and modules styles
-import './swiper/swiper-bundle.css';
-
-//  import 'swiper/css';
-//  import 'swiper/css/navigation';
-//  import 'swiper/css/pagination';
-// import 'swiper/css/bundle';
-
-// npx http-server 서버 켜서 하기..!
-
-console.log('입력이 잘 되는가?!?!');
+// npx http-server 서버 켜서 하기..! -> 이젠 키면 안됨..ㅎㅎㅎ 
 
 
  // init Swiper:
