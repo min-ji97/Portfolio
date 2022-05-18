@@ -1,9 +1,14 @@
-
+*{
+    /* margin: 0px; 
+    padding: 0px;  */
+}
 body{
     /* width: 1200px;
     margin: auto;  */
     margin: 0px; 
     padding: 0px; 
+    background-color: white;
+    cursor: none;
 }
 .inner{
     width: 1200px;
@@ -24,8 +29,10 @@ li{
 /* Nav Bar */
 
 #navbar{
-    
-    /* background-color: darkkhaki; */
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    background-color: white;
    
     
 }
@@ -39,6 +46,7 @@ li{
     flex-direction: row;
     justify-content: space-between;
     margin: 20px 40px;
+    /* height: 100%; */
 }
 
 .navbar_logo{
@@ -66,13 +74,13 @@ li{
 
 /* /////////////////////////////////////////////// */
 
-#Home{
+#home{
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    padding-top: 20px;
+    /* margin-top: 20px; */
+    padding-top: 120px;
 
     background-color: antiquewhite;
 }
@@ -83,7 +91,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 
 */
 
-#Home img{
+#home img{
     border-radius: 100%;
     width: 300px;
     height: 300px;
@@ -187,7 +195,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     flex-direction: column;
     align-items: center;
 
-    margin-bottom: 200px;
+    margin-bottom: 120px;
     box-sizing: border-box;
     padding: 40px;
     background-color: rgb(187, 235, 187);
@@ -248,10 +256,12 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 #footer{
     position: relative;
     width: 100%;
+    height: 200px;
     left: 0;
     bottom: 0;  
     background-color: rgb(71, 82, 102);
     box-sizing: border-box;
+    padding: 30px;
     /*  */
 }
 
@@ -259,3 +269,5 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 
 
 }
+
+
