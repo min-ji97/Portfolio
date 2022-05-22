@@ -8,12 +8,21 @@ body{
     margin: 0px; 
     padding: 0px; 
     background-color: white;
-    cursor: none;
+    /* cursor: none; */
 }
 .inner{
     width: 1200px;
     margin: auto; 
 }
+
+
+
+
+h1{
+    font-size: 35px;
+}
+
+
 
 a{
     /* list-style: none; */
@@ -26,8 +35,24 @@ li{
     list-style: none;
     
 }
-/* Nav Bar */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Nav Bar */
 #navbar{
     position: fixed;
     z-index: 10;
@@ -119,8 +144,46 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 .about_my_info{
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
 
-    font-size: 20px;
+    margin-top: 30px;
+}
+
+
+.my_info_part__top,
+.my_info_part__bottom{
+    display: flex;
+    /* justify-content: space-between; */
+}
+.my_info_part{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 350px;
+    margin: 20px 10px;
+    /* margin: 20px; */
+}
+
+.my_info_part i{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.my_info__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my_info__box__title{
+    font-size: 30px;
+}
+.my_info__box__content{
+    font-size: 23px;
+    text-align: center;
 }
 
 .about_majors{
@@ -271,3 +334,32 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 
+.cursor{
+    /* width: 20px; height: 20px; 
+    background-color: #000; 
+    border-radius: 10px; 
+    position: absolute; left: 0; top: 0; 
+    z-index: 999; 
+    transition: background-color .2s, 
+    border-color .2s, 
+    border-radius .2s, 
+    transform .6s */
+    width: 3rem;
+      height: 3rem;
+      border: 2px solid #1d1d1d;
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1000;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: all 0.3s ease;
+      transition-property: background, transform;
+      transform-origin: 100% 100%;
+      backdrop-filter: sepia(20%);
+      background-size: cover;
+}
+
+.cursor-grow {
+    transform: scale(2);
+    background-color: var(--color-texta);
+}
