@@ -31,6 +31,27 @@
 
  });
 
+ var swiper2 = new Swiper('.swiper_second', {
+
+  slidesPerView: 1,
+  spaceBetween: 30,
+  loop: true,
+
+  pagination: {
+    el : '.swiper-pagination',
+    clickable: true,
+  },
+
+ navigation: {
+   prevEl: '.swiper-button-prev',
+   nextEl: '.swiper-button-next',
+ },
+ scrollbar : {
+   el : '.swiper-scrollbar'
+ },
+
+});
+
 
 
  // 마우스 커서 이벤트..!! 
