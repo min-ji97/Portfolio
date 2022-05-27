@@ -250,7 +250,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    overflow-x: hidden;
     margin-bottom: 120px;
     box-sizing: border-box;
     padding: 80px;
@@ -258,20 +258,32 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 .projects{
-    width: 100%;
+    width: 360%;
+    /* margin: auto; */
+  
+}
+.mm{
+    display: flex;
+    flex-direction: row;
 
+    /* white-space: nowrap;  */
 }
 
 .my_project{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px 30px;
+    white-space: nowrap;
 
     /* padding: 30px; */
     /* width: 100%;     */
 }
 
-
+.my_project:first-child{
+    /* margin-left: 150px; */
+   
+}
 
 .project_title{
     font-size: 20px;
@@ -336,6 +348,93 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 .swiper-slide{
     object-fit: contain;
 }
+
+
+/* */
+
+section.horizontal {
+    /* overflow-x: hidden; */
+    width: 100%;
+    height: 100%;
+  }
+
+section.horizontal .pin-wrap,
+section.horizontal .animation-wrap {
+    display: flex;
+    position: relative;
+    z-index: 1;  
+    height: 100vh;
+}
+
+
+section.horizontal .item {
+    position: relative;
+    padding: 150px 80px;
+    flex: 0 0 500px;
+    height: calc(100vh - 300px);
+    display: flex;
+    align-items: center;
+    line-height: 1.7;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border-right: 1px solid rgba(0, 0, 0, 0.06);
+    background-color: transparent;
+}
+
+section.horizontal .item:before {
+    position: absolute;
+    font-size: 100px;
+    opacity: .13;
+    font-weight: bold;    
+    z-index: -1;
+    -webkit-transform: translate(-30px, -50px);
+    transform: translate(-30px, -50px);
+    line-height: 1;
+}
+
+
+
+
+section.horizontal .animation-wrap.to-right {
+    counter-reset: item;
+    float: left;
+}
+
+section.horizontal .animation-wrap.to-left {
+    counter-reset: item 11;
+    float: right; 
+}
+
+section.horizontal .animation-wrap.to-right .item:before {
+    counter-increment: item;
+    content: counter(item);
+}
+
+section.horizontal .animation-wrap.to-left .item:before {
+    counter-increment: item -1;
+    content: counter(item);
+}
+
+
+
+section.horizontal .animation-wrap .item:nth-child(2n+2) {
+    align-items: flex-start;
+}
+
+section.horizontal .animation-wrap .item:nth-child(4n+4) {
+    align-items: flex-end;
+}
+/*  */
+
+
+
+
+
+
+
+
 
 /* ///////////////////////////// */
 

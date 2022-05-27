@@ -2,7 +2,6 @@
 // import Swiper from 'swiper.js';
 // import 'swiper/swiper-bundle.css';
 
-
 // npx http-server 서버 켜서 하기..! -> 이젠 키면 안됨..ㅎㅎㅎ 
 
 
@@ -31,26 +30,26 @@
 
  });
 
- var swiper2 = new Swiper('.swiper_second', {
+//  var swiper2 = new Swiper('.swiper_second', {
 
-  slidesPerView: 1,
-  spaceBetween: 30,
-  loop: true,
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   loop: true,
 
-  pagination: {
-    el : '.swiper-pagination',
-    clickable: true,
-  },
+//   pagination: {
+//     el : '.swiper-pagination',
+//     clickable: true,
+//   },
 
- navigation: {
-   prevEl: '.swiper-button-prev',
-   nextEl: '.swiper-button-next',
- },
- scrollbar : {
-   el : '.swiper-scrollbar'
- },
+//  navigation: {
+//    prevEl: '.swiper-button-prev',
+//    nextEl: '.swiper-button-next',
+//  },
+//  scrollbar : {
+//    el : '.swiper-scrollbar'
+//  },
 
-});
+// });
 
 
 
@@ -92,3 +91,59 @@
 //     link.classList.remove("hovered-link");
 //   });
 // });
+
+
+
+
+gsap.registerPlugin(ScrollTrigger);
+
+// Horizontal Scroll - GSAP ScrollTrigger
+
+
+// const horizontalSections = gsap.utils.toArray('section.horizontal')
+
+// horizontalSections.forEach(function (sec, i) {	
+  
+//   var thisPinWrap = sec.querySelector('.pin-wrap');
+//   console.log(sec);
+//   var thisAnimWrap = thisPinWrap.querySelector('.animation-wrap');
+  
+//   var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
+
+//   gsap.fromTo(thisAnimWrap, { 
+//     x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
+//   }, { 
+//     x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
+//     ease: "none",
+//     scrollTrigger: {
+//       trigger: sec,		
+//       start: "top top",
+//       end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+//       pin: thisPinWrap,
+//       invalidateOnRefresh: true,
+//       //anticipatePin: 1,
+//       scrub: true,
+//       //markers: true,
+//     }
+//   });
+
+// });	
+
+//  gsap pinning 
+
+
+gsap.defaults({ease: "power1", duration: 3});
+
+const tl = gsap.timeline();
+tl.from(".projects", {xPercent: 40 })
+
+
+ScrollTrigger.create({
+  animation: tl,
+  trigger: "#project",
+  start: "top top", 
+  end: "+=4000",
+  pin: true,
+  scrub: true,
+  anticipatePin: 1
+});
