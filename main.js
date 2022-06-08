@@ -4,6 +4,27 @@
 
 // npx http-server 서버 켜서 하기..! -> 이젠 키면 안됨..ㅎㅎㅎ 
 
+const navbar_text = document.querySelectorAll('.navbar_box a , .navbar_box i');
+const navbar = document.querySelector('#navbar');
+const navbarHeight = navbar.getBoundingClientRect().height;
+
+document.addEventListener('scroll',()=>{
+    if(window.scrollY > navbarHeight){
+      navbar.classList.add('background--dark' , 'transition--1s');
+      navbar_text.forEach((item)=>{
+        item.classList.add('color--white' ,'transition--1s');
+      })
+    }else{
+      navbar.classList.remove('background--dark' );
+      navbar_text.forEach((item)=>{
+        item.classList.remove('color--white');
+      })
+
+    }
+});
+
+
+
 
  // init Swiper:
   var swiper = new Swiper('.swiper', {
@@ -135,7 +156,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.defaults({ease: "power1", duration: 3});
 
 const tl = gsap.timeline();
-tl.from(".projects", {xPercent: 40 })
+tl.from(".projects", {xPercent: 35 })
 
 
 ScrollTrigger.create({
@@ -145,5 +166,12 @@ ScrollTrigger.create({
   end: "+=4000",
   pin: true,
   scrub: true,
+  duration: 1,
   anticipatePin: 1
 });
+
+const my_project_class = document.querySelectorAll(".my_project");
+
+tl.to(my_project_class
+  , {xPercent: -100, duration:2, ease: "none"})
+  .to({},{duration:1});

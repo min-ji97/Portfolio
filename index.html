@@ -21,7 +21,7 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     
     <!-- 부트스트랩 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
      -->
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
@@ -53,17 +53,20 @@
         
     </section>
 
-    <section id="home" class="inner">
-        <img src="images/쁘니2.jpg" alt="Minji's profile photo"class="home__avatar"/>
-        <h2 class="home_title">Joe min ji</h1>
-        <h3 class="home_description">안녕하세요. 프론트엔드 개발자를 꿈꾸는 조민지입니다.</h2>
-        <!-- <div class="home_info">
-            <ul>
-                <li>E-mail : whalswl576@gmail.com</li>
-                <li>Blog : <a href="https://min-coding.tistory.com/">블로그</a></li>
-                <li>Git-hub : <a href="https://github.com/min-ji97">깃허브</a></li>
-            </ul>
-        </div> -->
+    <section id="home" >
+        <div class="home-inner inner">
+            <img src="images/쁘니2.jpg" alt="Minji's profile photo"class="home__avatar"/>
+            <h2 class="home_title">Joe min ji</h1>
+            <h3 class="home_description">안녕하세요. 프론트엔드 개발자를 꿈꾸는 조민지입니다.</h2>
+            <!-- <div class="home_info">
+                <ul>
+                    <li>E-mail : whalswl576@gmail.com</li>
+                    <li>Blog : <a href="https://min-coding.tistory.com/">블로그</a></li>
+                    <li>Git-hub : <a href="https://github.com/min-ji97">깃허브</a></li>
+                </ul>
+            </div> -->
+        </div>
+        
 
        
     </section>
@@ -220,6 +223,26 @@
                     <div class="skill_value"></div>
                 </div>
             </div>
+
+            <div class="skill">
+                <div class="skill_description">
+                    <span>Node.js</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill_bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="skill_description">
+                    <span>Git/GitHub</span>
+                    <span>99%</span>
+                </div>
+                <div class="skill_bar">
+                    <div class="skill_value"></div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -259,7 +282,7 @@
         <div class="projects ">
             <div class="mm">
                  <!-- 졸작 -->
-                <div class="my_project inner">
+                <div class="my_project my_project_inner">
                     <div class="project_title">누리다</div>
                     <div class="project_contents">
                         <div class="project_contents_img">
@@ -382,7 +405,7 @@
                     </div>
                 </div>
                 <!-- 펫보드 게시판 -->
-                <div class=" my_project  inner">
+                <div class=" my_project my_project_inner">
                     <div class="project_title">petTalk</div>
                     <div class="project_contents">
                         <div class="project_contents_img">
@@ -403,14 +426,15 @@
                     </div>
                 </div>
                 <!-- 스타벅스 클론코딩 -->
-                <div class=" my_project inner">
+                <div class=" my_project my_project_inner">
                     <div class="project_title">스타벅스 클론코딩</div>
                     <div class="project_contents">
                         <div class="project_contents_img">
                             <!-- swiper를 이용한 슬라이더 -->
                             <div class="swiper">
                                 <div class="swiper-wrapper">
-                                    <img class="swiper-slide" src="images/projects/졸업작품.PNG" alt="">
+                                    <img class="swiper-slide" src="images/projects/스벅클론1.PNG" alt="">
+                                    <img class="swiper-slide" src="images/projects/스벅클론2.PNG" alt="">
                                 </div>
                                 <div class="swiper-pagination"></div>
                                 <div class="swiper-button-prev"></div>
@@ -423,7 +447,7 @@
                     </div>
                 </div>
                 <!-- 카카오톡 클론코딩 -->
-                <!-- <div class=" my_project inner">
+                <!-- <div class=" my_project my_project_inner">
                     <div class="project_title">카카오톡 클론코딩 + soket.io</div>
                     <div class="project_contents">
                         <div class="project_contents_img"></div>

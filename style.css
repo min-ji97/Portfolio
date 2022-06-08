@@ -1,4 +1,5 @@
 *{
+    scroll-behavior: smooth;
     /* margin: 0px; 
     padding: 0px;  */
 }
@@ -12,8 +13,6 @@ body{
 }
 .inner{
     width: 1200px;
-
-
     margin: auto; 
 }
 
@@ -28,11 +27,23 @@ a{
     text-decoration: none;
     /* cursor: pointer; */
     color: black;
+    /* animation: all ease 0.3s; */
 }
 
 li{
     list-style: none;
     
+}
+
+/* /////////////////// */
+.background--dark{
+    background-color: rgb(41, 40, 40) !important;    
+}
+.color--white{
+    color: white !important;
+}
+.transition--1s{
+    transition: all ease 1s;
 }
 
 
@@ -41,15 +52,12 @@ li{
     position: fixed;
     z-index: 10;
     width: 100%;
-    background-color: white;
-   
-    
+    background-color: transparent;   
 }
 .position--fixed{
     position: fixed;
 }
 .navbar_box{
-    
     /* background-color: beige; */
     display: flex;
     flex-direction: row;
@@ -81,18 +89,38 @@ li{
     font-size: 18px;
 }
 
+
+
 /* /////////////////////////////////////////////// */
 
 #home{
+
+    width: 100%;
+    padding-top: 170px;
+    position: relative;
+    padding-bottom: 200px;
+    overflow: hidden ;
+
+}
+#home::before{
+    content:  url(images/배경화면임시폴더/skyline-g9b1e5323c_1920.jpg);
+    /* width: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;    
+    opacity: 0.8;
+    z-index: -5;
+    /* display: block; */
+    /* overflow-x: hidden !important; */
+    width:auto ;
+}
+.home-inner{
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     align-items: center;
-    /* margin-top: 20px; */
-    padding-top: 120px;
-
-    background-color: antiquewhite;
 }
+
+
 /*  
 
 flex-direction을 column으로 주면 가운데정렬이안됨..!(justify content center 안먹힘)
@@ -124,7 +152,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     /* justify-content: center; */
     flex-direction: column;
     align-items: center;
-    background-color: rgb(187, 243, 243);
+    background-color: white;
     padding-top: 80px;
 
     /* animation: all ease 0.3s; */
@@ -245,20 +273,31 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 /* ///////////////////////////////// */
+.my_project_inner{
+    width: 1500px;
+    margin: auto; 
+}
 
 #project{
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    margin-bottom: 120px;
+    margin-bottom: 120px;   
     box-sizing: border-box;
     padding: 80px;
-    background-color: rgb(187, 235, 187);
-}
+    /* background-color: rgb(187, 235, 187); */
+    /* width: 100%; */
 
+
+}
+.horizontal{
+    /* 
+    background:  repeat url(images/배경화면임시폴더/skyline-g9b1e5323c_1920.jpg) 0 0; */
+    
+}
 .projects{
-    width: 360%;
+    /* width: auto; */
     /* margin: auto; */
   
 }
@@ -286,30 +325,36 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 .project_title{
-    font-size: 20px;
-    margin: 30px 0px;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 0px 20px 0px;
 }
+
+
+
 
 .project_contents{
     display: flex;
     flex-direction: row;
-    background-color: rgb(68, 66, 63);
-
+    /* background-color: rgb(68, 66, 63); */
+    /* border: 1px solid white; */
     justify-content: space-around;
 
     width: 100%;
-    border-radius: 5%;
+    /* border-radius: 24px; */
 
     text-align: center;
 
 }   
 .project_contents_img{
-    width: 50%;
+    width: 60%;
     height: 600px;
     text-align: center;
     /* margin: 30px; */
     /* object-fit: contain; */
     /* background-color:rgb(236, 125, 147); */
+    background-color: rgb(68, 66, 63);
+    border-radius: 24px 0px 0px 24px;
     box-sizing: border-box;
     padding: 30px;
 }
@@ -334,9 +379,10 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     
     box-sizing: border-box;
     padding: 30px;
-    width: 50%;
+    width: 40%;
     /* height: inherit; */
     background-color: rgb(245, 240, 240);
+    border-radius: 0px 24px 24px 0px;
 
 }
 
