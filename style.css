@@ -12,7 +12,7 @@ body{
     /* cursor: none; */
 }
 .inner{
-    width: 1200px;
+    width: 1300px;
     margin: auto; 
 }
 
@@ -54,9 +54,9 @@ li{
     width: 100%;
     background-color: transparent;   
 }
-.position--fixed{
+/* .position--fixed{ 이거 어디다 쓴거지.... 아이돈노우..
     position: fixed;
-}
+} */
 .navbar_box{
     /* background-color: beige; */
     display: flex;
@@ -66,14 +66,16 @@ li{
     /* height: 100%; */
 }
 
-.navbar_logo{
+.navbar_box a:hover{
+   color: rgb(190, 255, 174) !important;
+   transition: color ease 0.5s ;
+}
+.navbar_logo i:hover{
+    color: pink !important;
+    transform: scale(1.2);
+    transition: all ease 0.5s ;
+}
 
-}
-.navbar_menu{
-    /* width: 50%; */
-    /* display: flex; */
-    /* justify-content: center; */
-}
 .navbar_menu_list{
     /* display: inline-block; */
     /* align-items: center; */
@@ -162,7 +164,6 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     display: flex;
     flex-direction: column;
     font-size: 25px;
-
     margin-top: 30px;
 }
 
@@ -183,7 +184,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 .my_info_part i{
-    font-size: 50px;
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
@@ -194,59 +195,160 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 
 .my_info__box__title{
-    font-size: 30px;
+    font-size: 27px;
+    font-weight: bold;
+    
 }
 .my_info__box__content{
-    font-size: 23px;
+    font-size: 20px;
     text-align: center;
 }
 
 .about_majors{
     display: flex;
-    flex-direction: column;
-
-    /* width: 80%; */
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* width: 80%; */   
     margin-top: 100px;
 
+
+    border-top: 1px solid rgb(141, 141, 141);
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    /* background-color: #222; */
+
 }
-.major_icon i{
-    font-size: 100px;
+.major_icon {
     margin: 0px 30px;
+    /* border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 50%; */
+    /* border-left-color:#5cb85c; */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    position: relative;
+    /* animation: rotate 0.8s linear infinite; */
+    /* background-color: #222; */
+}
+.major_icon::after{
+    content: '';
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    border-radius: 50%;
+    border-left-color:#5cb85c;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    animation: rotate 0.7s linear infinite; 
+}
+@keyframes rotate {
+    50%{
+        border-left-color:#9b59b6; 
+    }
+    75%{
+        border-left-color:#e67e22; 
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.major_icon:hover .icon--1,
+.major_icon:hover .icon--2,
+.major_icon:hover .icon--3,
+.major_icon:hover .icon--4 {
+    color: #1d1d1d;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+
+}
+/* .major_icon:hover .major_icon::after{
+    animation-play-state: paused;
+} */
+
+.major_icon i{
+    /* animation-play-state: paused; */
+    transform: none;
+    animation-delay: 1s;
+    position: absolute;
+    font-size: 130px;
+    /* margin: 0px 30px; */
     width: 100px;
     text-align: center;
-    /* display: inline; */
+  
+     /* transform: rotate1(-360deg); */
 }
+
+.major_icon .icon--1{
+    transform: none;
+    top: 43px;
+    left: 54px; 
+    color: rgb(187, 255, 204);
+}
+.major_icon .icon--2{
+    font-size: 120px;
+    top: 42px;
+    left: 42px;
+    color: rgb(50, 90, 126);
+}
+.major_icon .icon--3{
+    font-size: 110px;
+    top: 46px;
+    left: 42px;
+    color: rgb(196, 221, 243);
+}
+
+.major_icon .icon--4{
+    font-size: 110px;
+    top: 49px;
+    left: 64px;
+    color: rgb(216, 224, 168);
+}
+
+
 .major_front , 
 .major_back, 
 .major_certificate,
 .major_version,
 .major_Deployment {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 30px;
+    text-align: center;
+    align-items: center;
+    /* height: 100%; */
+    width: 330px;
 }
 
 .major_description{
-    font-size: 25px;
-    line-height: 100px;
-    margin-left: 50px;
+    font-size: 20px;
+    line-height: 33px;
+    /* margin-left: 58px; */
+    margin-top: 28px;
 }
 
 /* //////////////////////////////////////////////// */
 
 #skils{
+    
+  
+    background-color: rgb(141, 138, 138);
+    padding: 80px;
+}
+.skils-inner{
     display: flex;
     flex-direction: column;
     align-items: center;
 
     box-sizing: border-box;
-    /* padding: 40px; */
-    background-color: rgb(169, 222, 247);
-    padding: 80px;
 }
 
 .skillset{
-    width: 80%;
+    width: 80%;    
 }
 
 .skill{
@@ -258,18 +360,23 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     justify-content: space-between;
 
     font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 14px;
 }
 
 .skill_bar{
     width: 100%;
-    height: 5px;
+    height: 30px;
+    border-radius: 20px;
     background-color: rgb(240, 214, 214);
 }
 
 .skill_value{
-    width: 60%;
+
+    border-radius: 20px;
     height: inherit;
-    background-color: black ;
+    background-color: #222;
+    transition: all ease 3s;
 }
 
 /* ///////////////////////////////// */
@@ -490,7 +597,7 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
     height: 250px;
     left: 0;
     bottom: 0;  
-    background-color: rgb(71, 82, 102);
+    background-color: rgb(41, 40, 40);
     box-sizing: border-box;
     padding: 30px;
     /*  */
@@ -506,10 +613,26 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
 
 .contacts i{
     font-size: 50px;
-    padding: 30px;
+    padding: 40px;
+    color: aliceblue;
+
+}
+.contacts i:hover {
+    color: rgb(247, 242, 242);
+    /* background-color: white;
+    border: 1px solid white;  */
+    /* border-radius: 50%; */
+    /* width: 20px;
+    height: 20px;  */
+    transition: all ease 0.5s;
+    transform: scale(1.5);
+    /* transform:  rotateY(360deg); */
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(190, 255, 174);
 }
 .contact_right{
     text-align: center;
+    color: rgb(199, 197, 197);
     /* margin-top: 30px; */
 }
 
