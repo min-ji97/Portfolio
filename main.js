@@ -175,3 +175,121 @@ const my_project_class = document.querySelectorAll(".my_project");
 tl.to(my_project_class
   , {xPercent: -100, duration:2, ease: "none"})
   .to({},{duration:1});
+
+
+
+  
+// gsap.from('.skill_value',2,{
+//   scrollTrigger: {
+//       trigger: ".skillset",
+//       start: 'top bottom',
+//       toggleActions:'restart pause resume pause',
+//       markers: {
+//         startColor: 'yellow',
+//         endColor: 'black',
+//         fontSize: '4rem',
+//         indent: 200
+//       },
+// },  
+//   // x: -1071,
+//   width: '0%',
+//   ease: 'none',
+//   // delay: 0.3,
+//   // opacity: 1
+// });
+
+
+const t2 = gsap.timeline()
+  .to('.skill_value-html',{width:'90%', ease: 'power2.out', duration: 0.1})
+  .to('.skill_value-css', {width:'90%', duration: 0.1})
+  .to('.skill_value-js', {width:'70%', duration: 0.1})
+  .to('.skill_value-vue', {width:'78%', duration: 0.1})
+  .to('.skill_value-node',{width:'50%', duration: 0.1})
+  .to('.skill_value-git', {width:'40%', duration: 0.1});
+
+
+const st = ScrollTrigger.create({
+  animation: t2,
+  trigger: '.skillset',
+  start: 'top bottom',
+  // markers: {
+  //   startColor: 'yellow',
+  //   endColor: 'black',
+  //   fontSize: '4rem',
+  //   indent: 200
+  // },
+  toggleActions:"restart reset restart reset",
+  // onEnter: () => gsap.to('.skill_value',1,{
+  //   width: "0%"
+  // }),
+ 
+  // ease: 'none',
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// t2.to('.skill_value-html',{ 
+//   width:'90%',
+  
+//   // toggleClass: {targets:'.skill_value-html', className: 'skill--width--90'},
+//   ease: 'none'
+  
+// });
+
+
+
+// t2.from('.skill_value',{
+//   width: "0%" , duration: 3 
+// })
+
+///////////////////////////////////////////////////////////////////////
+
+// t2.from('.skill_value', {xPercent: 0})
+
+//   ScrollTrigger.create({
+//     trigger : '.skillset',
+//         start: 'top bottom',
+//         // toggleActions : 'restart none reverse none',
+//         markers: {
+//             startColor: 'yellow',
+//             endColor: 'black',
+//             fontSize: '4rem',
+//             indent: 200
+//         },
+
+//         // skill_value
+//         onEnter: () => gsap.from('.skill_value',3,{
+//             x: 0,
+//             opacity: 1,
+//             // stagger: 3,
+//         }),
+
+//         onLeave: () => gsap.to('.favorite_page_logo', {
+//             x: -1000,
+//             opacity: 0,
+//           }),
+//         onEnterBack: () => gsap.to('.favorite_page_logo', {
+//             x: 1000,
+//             opacity: 1,
+            
+//         }),
+//         onLeaveBack: () => gsap.to('.favorite_page_logo',4, {
+//         x: -1000,
+//         opacity: 0,
+//         }),
+
+// });

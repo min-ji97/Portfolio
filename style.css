@@ -26,7 +26,7 @@ a{
     /* list-style: none; */
     text-decoration: none;
     /* cursor: pointer; */
-    color: black;
+    color: rgb(247, 207, 207);
     /* animation: all ease 0.3s; */
 }
 
@@ -188,6 +188,16 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     margin-bottom: 15px;
 }
 
+.my_info_part i:hover{
+
+    /* background: linear-gradient(to right, #fbcac9, #8ca6ce); */
+    /* background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+    background: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    transition: all ease 0.5s;
+}
+
 .my_info__box{
     display: flex;
     flex-direction: column;
@@ -203,7 +213,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     font-size: 20px;
     text-align: center;
 }
-
+/* ///////////////////////////////////////// */
 .about_majors{
     display: flex;
     flex-direction: row;
@@ -212,6 +222,7 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     /* width: 80%; */   
     margin-top: 100px;
 
+    /* background-color: #90F9C4; */
 
     border-top: 1px solid rgb(141, 141, 141);
     padding-top: 100px;
@@ -234,7 +245,8 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
 }
 .major_icon::after{
     content: '';
-    border: 2px solid rgb(255, 255, 255, 0.2);
+    /* border: 2px solid rgb(255, 255, 255, 0.2); */
+    border: 2px solid rgba(199, 118, 118, 0.2);
     border-radius: 50%;
     border-left-color:#5cb85c;
     width: 200px;
@@ -377,7 +389,25 @@ align-items center을 해줘야 요소들이 가운데 정렬을 함..!
     height: inherit;
     background-color: #222;
     transition: all ease 3s;
+    width: 0%;
 }
+
+/* .skill--width--90{
+    width: 90;
+}
+
+.skill--width--70{
+    width: 70%;
+}
+.skill--width--78{
+    width: 78%;
+}
+.skill--width--50{
+    width: 50%;
+}
+.skill--width--40{
+    width: 40%;
+} */
 
 /* ///////////////////////////////// */
 .my_project_inner{
@@ -618,7 +648,7 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
 
 }
 .contacts i:hover {
-    color: rgb(247, 242, 242);
+    /* color: rgb(247, 242, 242); */
     /* background-color: white;
     border: 1px solid white;  */
     /* border-radius: 50%; */
@@ -628,11 +658,19 @@ section.horizontal .animation-wrap .item:nth-child(4n+4) {
     transform: scale(1.5);
     /* transform:  rotateY(360deg); */
     text-align: center;
-    text-shadow: 2px 2px 5px rgb(190, 255, 174);
+    /* text-shadow: 2px 2px 3px rgb(255, 255, 255); */
+
+    background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    color: transparent;
+    -webkit-background-clip: text;
 }
 .contact_right{
     text-align: center;
-    color: rgb(199, 197, 197);
+    /* color: rgb(199, 197, 197); */
+    /* background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%); */
+    background: linear-gradient(-225deg, #DFFFCD 0%, #90F9C4 48%, #39F3BB 100%);
+    color: transparent;
+    -webkit-background-clip: text;
     /* margin-top: 30px; */
 }
 
